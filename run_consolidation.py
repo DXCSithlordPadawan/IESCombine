@@ -7,7 +7,6 @@ with different options and configurations.
 """
 
 import sys
-import os
 import argparse
 from pathlib import Path
 
@@ -29,47 +28,46 @@ def main():
     parser = argparse.ArgumentParser(
         description="Consolidate IES4 JSON files by country/region"
     )
-    
+
     parser.add_argument(
         "--base-path",
         default="C:\\ies4-military-database-analysis",
-        help="Base path for the analysis (default: C:\\ies4-military-database-analysis)"
+        help=(
+            "Base path for the analysis "
+            "(default: C:\\ies4-military-database-analysis)"
+        ),
     )
-    
+
     parser.add_argument(
-        "--verbose", "-v",
-        action="store_true",
-        help="Enable verbose logging"
+        "--verbose", "-v", action="store_true", help="Enable verbose logging"
     )
-    
+
     parser.add_argument(
-        "--dry-run",
-        action="store_true",
-        help="Perform a dry run without saving files"
+        "--dry-run", action="store_true", help="Perform a dry run without saving files"
     )
-    
+
     args = parser.parse_args()
-    
+
     # Validate base path exists
     base_path = Path(args.base_path)
     if not base_path.exists():
         print(f"Error: Base path does not exist: {base_path}")
         sys.exit(1)
-    
-    print(f"IES4 JSON Consolidator")
+
+    print("IES4 JSON Consolidator")
     print(f"Base Path: {base_path}")
     print(f"Data Path: {base_path / 'data'}")
     print(f"Output Path: {base_path / 'output' / 'consolidated'}")
     print("-" * 50)
-    
+
     if args.dry_run:
         print("DRY RUN MODE - No files will be saved")
         print("-" * 50)
-    
+
     try:
         # Initialize consolidator
         consolidator = IES4Consolidator(str(base_path))
-        
+
         if args.dry_run:
             # For dry run, just discover and report
             country_folders = consolidator._discover_country_folders()
@@ -78,14 +76,14 @@ def main():
                 json_files = list(folder.glob("*.json"))
                 print(f"  {folder.name}: {len(json_files)} JSON files")
             return
-        
+
         # Run actual consolidation
         print("Starting consolidation process...")
         results = consolidator.consolidate_by_country()
-        
+
         # Generate and display summary
         consolidator.generate_summary_report(results)
-        
+
         # Return appropriate exit code
         failed_count = sum(1 for success in results.values() if not success)
         if failed_count > 0:
@@ -94,7 +92,7 @@ def main():
         else:
             print("\nAll consolidations completed successfully!")
             sys.exit(0)
-            
+
     except KeyboardInterrupt:
         print("\nOperation cancelled by user.")
         sys.exit(130)
