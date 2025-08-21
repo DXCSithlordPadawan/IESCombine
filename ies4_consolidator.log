@@ -1,0 +1,40 @@
+2025-08-21 14:27:26,917 - WARNING - Schema file not found at /tmp/test_ies4_data/ies4_json_schema.json
+2025-08-21 14:27:26,917 - INFO - Starting IES4 r4.3.0 JSON file consolidation process
+2025-08-21 14:27:26,918 - INFO - Processing folder: iran (/tmp/test_ies4_data/data/iran)
+2025-08-21 14:27:26,918 - INFO - Merging 2 JSON files for iran
+2025-08-21 14:27:26,918 - INFO - Processing file: /tmp/test_ies4_data/data/iran/iran_drones_v1.json
+2025-08-21 14:27:26,918 - INFO - Processing file: /tmp/test_ies4_data/data/iran/iran_drones_v2.json
+2025-08-21 14:27:26,918 - INFO - Updated vehicles: iran-drone-001 from v1.0 to v2.0
+2025-08-21 14:27:26,918 - INFO - Consolidated 2 vehicles
+2025-08-21 14:27:26,919 - INFO - Consolidated 1 organizations
+2025-08-21 14:27:26,919 - WARNING - No schema available for validation
+2025-08-21 14:27:26,919 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_iran_consolidated.json
+2025-08-21 14:27:26,919 - INFO - Processing folder: uk_army (/tmp/test_ies4_data/data/uk/army)
+2025-08-21 14:27:26,919 - INFO - Single JSON file in /tmp/test_ies4_data/data/uk/army, enhancing with metadata
+2025-08-21 14:27:26,919 - WARNING - No schema available for validation
+2025-08-21 14:27:26,920 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_uk_army_consolidated.json
+2025-08-21 14:27:26,920 - INFO - Processing folder: uk_navy (/tmp/test_ies4_data/data/uk/navy)
+2025-08-21 14:27:26,920 - INFO - Single JSON file in /tmp/test_ies4_data/data/uk/navy, enhancing with metadata
+2025-08-21 14:27:26,920 - WARNING - No schema available for validation
+2025-08-21 14:27:26,920 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_uk_navy_consolidated.json
+2025-08-21 14:27:26,921 - INFO - Summary report saved: /tmp/test_ies4_data/output/consolidated/consolidation_report.txt
+2025-08-21 14:30:56,029 - WARNING - Schema file not found at /tmp/test_ies4_data/ies4_json_schema.json
+2025-08-21 14:30:56,029 - INFO - Starting IES4 r4.3.0 JSON file consolidation process
+2025-08-21 14:30:56,029 - INFO - Processing folder: iran (/tmp/test_ies4_data/data/iran)
+2025-08-21 14:30:56,030 - INFO - Merging 2 JSON files for iran
+2025-08-21 14:30:56,030 - INFO - Processing file: /tmp/test_ies4_data/data/iran/iran_drones_v1.json
+2025-08-21 14:30:56,030 - INFO - Processing file: /tmp/test_ies4_data/data/iran/iran_drones_v2.json
+2025-08-21 14:30:56,030 - INFO - Updated vehicles: iran-drone-001 from v1.0 to v2.0
+2025-08-21 14:30:56,030 - INFO - Consolidated 2 vehicles
+2025-08-21 14:30:56,030 - INFO - Consolidated 1 organizations
+2025-08-21 14:30:56,030 - WARNING - No schema available for validation
+2025-08-21 14:30:56,031 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_iran_consolidated.json
+2025-08-21 14:30:56,031 - INFO - Processing folder: uk_army (/tmp/test_ies4_data/data/uk/army)
+2025-08-21 14:30:56,031 - INFO - Single JSON file in /tmp/test_ies4_data/data/uk/army, enhancing with metadata
+2025-08-21 14:30:56,031 - WARNING - No schema available for validation
+2025-08-21 14:30:56,031 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_uk_army_consolidated.json
+2025-08-21 14:30:56,032 - INFO - Processing folder: uk_navy (/tmp/test_ies4_data/data/uk/navy)
+2025-08-21 14:30:56,032 - INFO - Single JSON file in /tmp/test_ies4_data/data/uk/navy, enhancing with metadata
+2025-08-21 14:30:56,032 - WARNING - No schema available for validation
+2025-08-21 14:30:56,032 - INFO - Saved consolidated file: /tmp/test_ies4_data/output/consolidated/ies4_uk_navy_consolidated.json
+2025-08-21 14:30:56,032 - INFO - Summary report saved: /tmp/test_ies4_data/output/consolidated/consolidation_report.txt
