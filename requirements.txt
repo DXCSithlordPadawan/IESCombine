@@ -1,0 +1,10 @@
+# Requirements for IES4 Military Database Consolidator
+# Python 3.8+ required
+
+jsonschema>=4.0.0
+pathlib2>=2.3.0; python_version<'3.4'
+
+# Optional development dependencies
+pytest>=6.0.0
+black>=21.0.0
+flake8>=3.8.0
